@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="icon" href="assets/home_icon.png" />
+<title>Домино - Гостиничный комплекс</title>
+<meta Name="Publisher-Email" Content="to_misha@mail.ru" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script-->
+<style>
+html,body,p,ul,li{margin:0;padding:0;}
+ul{list-style: none;}
+body{background:url(assets/hotel-wallpaper.webp);font-family:"Open Sans", Arial, sans-serif;padding-bottom: 300px;overflow-y: scroll;}
+#main_menu{width:100%;height:63px;background-color:#2d1e0c;display: flex;align-items: center;justify-content: center;position:fixed;top:0px;left:0px;z-index: 100}
+#main_menu span{font-family:Helvetica, sans-serif;font-size:40px;color:#b2a89d;letter-spacing:-2px;user-select:none;position: relative;bottom: 3px;margin-right:40px}
+#main_menu a{font-size:20px;text-decoration:none;color:#ebc191;display:flex;align-items: center;height: inherit;padding:0 20px;letter-spacing:1px;}
+#main_menu a:hover{background-color:#543b1c}
+i{font-style:normal;}
+section{padding-top:63px;}
+.content{min-height:200px;width:800px;margin:0 auto;background-color:rgba(246,246,246,.9);display:table;border:solid 1px #e2e2e2}
+.content h1{margin:0;padding:10px 20px;font-size:24px;}
+.content h2{margin:0;padding:0;font-size:16px;display:inline-block;width:calc(100% - 196px)}
+.content h3{margin:0;padding:0;font-size:13px;}
+.content_wrapper{width:calc(100% - 40px);padding:20px;margin:0;margin-bottom:15px;min-height:60px;background:#fff}
+.content_wrapper:last-child{margin-bottom:0!important;}
+.main_preview{width:120px;height:120px;float:left;background:#f4f4f4;background-size: contain;margin:0 12px 10px 0}
+.main_description{width:100%}
+
+.content dl{margin:12px 4px 0 0;padding:0;display:inline-block;width:116px;}
+.content dt,.content dd{margin:0;font-size:15px;text-align:center;width:100%;padding: 8px 0;border:solid 1px #e8e8e8;border-radius:3px;}
+/*.content dt::after{content: ':'}*/
+.content dt{background-color:#e8e8e8;border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0;}
+.content dd{background-color:#f6f6f6;border-top:none;border-top-left-radius:0;border-top-right-radius:0;}
+.content dl span{font-weight:bold;color:#606060}
+.order_more{/*background-image: linear-gradient(#f6f6f6, #e8e8e8);*/
+cursor:pointer;
+border:dashed 1px #FF7F50;
+display:flex;
+align-items:center;
+justify-content:center;
+height:70px;
+width:140px;
+float:right;
+border-radius:20px;
+/*text-transform: uppercase;*/
+letter-spacing:1px;
+font-size:16px;
+color: #FF7F50;
+margin:10px 20px 0 0}
+.order_more:hover{background-image: linear-gradient(#FF7F50, #f46835);border:solid 1px #f28948;color:#fff}
+.main_more {display: flex;align-items: center;justify-content: center;position: absolute;width:860px;font-size:14px;height:33px;}
+.content li{margin:4px 0;padding-left:13px;font-size:13px;}/*border-left:solid 4px #f28948}*/
+.content li::before{
+content: '';
+display: block;
+width: 7px;
+height: 7px;
+background-color: #f28948;
+position: absolute;
+margin-left:-13px;
+margin-top:6px;
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+</style>
+</head>
+<body>
+  <nav id="main_menu"><span>&laquo;Домино&raquo;</span>
+  <a href="#home"><i>Гостиница</i></a>
+  <a href="#sauna"><i>Сауна</i></a>
+  <a href="#banya"><i>Баня</i></a>
+  <a href="#contact"><i>Контакты</i></a>
+  </nav>
+<div id="content">
+<section id="home"><div class="content">
+<h1>Гостиница</h1>
+<div class="content_wrapper">
+<div class="main_preview" style="background-image:url(assets/small-01.jpg)"></div>
+<div class="main_description">
+<h2>Номер «Стандарт» с 2 раздельными кроватями</h2>
+<dl>
+  <dt>Час</dt>
+  <dd><span>500</span> р</dd>
+</dl>
+<dl>
+  <dt>Сутки</dt>
+  <dd><span>2100</span> р</dd>
+</dl>
+<dl>
+  <dt>12 часов</dt>
+  <dd><span>1600</span> р</dd>
+</dl>
+<a class="order_more"><i>Подробнее</i></a>
+</div>
+<div style="clear:both"></div>
+<p><h3>В номере:</h3>
+<ul><li>Кровати и ортопедические матрасы фирмы «Орматек»</li>
+<li><b>Ванная комната с туалетом, <u>ванной</u> и душем</b></li>
+<li>Большой ЖК телевизор  с проигрыванием музыки и фильмов с USB</li>
+<li>Кабельное телевидение (более 60 каналов)</li>
+<li>Бесплатный WI-FI</li>
+<li>Туалетные принадлежности (шампунь, гель для душа)</li>
+<li>Холодильник</li>
+</ul>
+<h3>Дополнительно:</h3>
+<ul><li>Завтрак за отдельную плату</li>
+<li>Кулер, микроволновая печь (на этаже), фен, гладильная доска, чайник (по требованию у администратора)</li>
+<li>Бесплатная охраняемая парковка</li></ul>
+</p>
+</div>
+
+<div class="content_wrapper">
+<div class="main_preview" style="background-image:url(assets/small-01.jpg)"></div>
+<div class="main_description">
+<h2>Номер «Стандарт» с двуспальной кроватью</h2>
+<dl>
+  <dt>Час</dt>
+  <dd><span>500</span> р</dd>
+</dl>
+<dl>
+  <dt>Сутки</dt>
+  <dd><span>2100</span> р</dd>
+</dl>
+<dl>
+  <dt>12 часов</dt>
+  <dd><span>1600</span> р</dd>
+</dl>
+<a class="order_more"><i>Подробнее</i></a>
+</div>
+<div style="clear:both"></div>
+<p><h3>В номере:</h3>
+<ul><li>Большая кровать с ортопедическим матрасом фирмы «Орматек»</li>
+<li><b>Ванная комната с туалетом и душем</b></li>
+<li>Большой ЖК телевизор  с проигрыванием музыки и фильмов с USB</li>
+<li>Кабельное телевидение (более 60 каналов)</li>
+<li>Бесплатный WI-FI</li>
+<li>Туалетные принадлежности (шампунь, гель для душа)</li>
+<li>Холодильник</li>
+</ul>
+<h3>Дополнительно:</h3>
+<ul><li>Завтрак за отдельную плату</li>
+<li>Кулер, микроволновая печь (на этаже), фен, гладильная доска, чайник (по требованию у администратора)</li>
+<li>Бесплатная охраняемая парковка</li></ul>
+</p>
+</div>
+
+</div></section>
+
+<section id="sauna"><div class="content">
+<h1>Сауна</h1>
+<div class="content_wrapper">
+<div class="main_preview" style="background-image:url(assets/small-01.jpg)"></div>
+<div class="main_description">
+<h2>Номер «Стандарт» с 2 раздельными кроватями</h2>
+<dl>
+  <dt>Час</dt>
+  <dd><span>500</span> р.</dd>
+  <dt>Сутки</dt>
+  <dd><span>2100</span> р.</dd>
+  <dt>12 часов</dt>
+  <dd><span>1600</span> р.</dd>
+</dl>
+<div class="main_more">Подробнее</div>
+</div>
+<div style="clear:both"></div>
+</div>
+ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAACO0lEQVRoge3aPYvUQBzH8c+dep4eohZWZ+dDoyBYCBa+AhXkQARFsLLRwk7BRhsLwXdgJwh6WlsoWClqr+ALkCt0kV0FH3AvFuFQ1uxuspnksnG+MM1m5vef75LNZpIhEon8D+zGMnpIGtZ6eIx9IWU7DRAb1zpYDCG83ACZvO3BOJmZHMI9bMvRrwl0sWNUhzzCSZi51MZIp9m6ZtEUonDbicJtJwq3nSgcmB8V5xemCuHPuIy9mMdSBTUqpcjN+xccyMh4UzCnTKtV+NKQjKU2Cn/E3JCMWbxrgnDI3/BL/BxybBW3A9aamJDCnTHH7+NbwHoTEVJ455jjp7A5YL3KyPvb+TBk/Ayuol8gayouWgn2ZIy/V5No7RctOJPx2ZHANSqnyLf7NmP8lYIZU3VKJzg8MH4BK20WfpiRca7Nwn0czMip6+JVu3CCV9gwkLNVPYuIdRFOcD0jazteDOm/Ksx/9boJ93EyI28edwf6PpK+tFvEDelNzNQJJ9L18dEhuSfwHjf9+3pkE07j+QQ1S1P2FOvhWIn6ZwvWK01Z4QTfcWHC+nMFa5UmhPBau4ONBetvKVijNCGFE7xWbHvCxYL5pQktnOArrhm/Pj4vfWgw9cJrbQW3cMifldsuHMeTCTNH0qQdAL+kD+4XSuaMdGqScCjiloe/icJtJwq3nSjcdqJwBr3KZxGO7rgOeYSfBZhIXTwNEbIfn1S7iAjROtJ9JUFYlG6+7jZAbLB1pZvYg8lGIpHm8hvoWoqqES8REQAAAABJRU5ErkJggg=="></div></section>
+<section id="banya"><div class="content">33333 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAABEElEQVRoge2bQWoCQRBFX4JbSQ7grD27QXCVBBfeSIWZC5jFZKEQBqlqu+Of/6CW1V2PKnpVDcZM0QFbYAAuD44B2AHrKmZ/0AGniQIfFeffu6uzDRRbKj6iRb9EExlHbJnIzzAAb5HEjPAlkVuCUO2vpav47ywKnpWZlnsoMlGz67CF1bGwOhZWx8LqWFgdC6tjYXUsrI6F1bGwOhZWx8LqWFgdC6tjYXUsrI6F1bGwOhZWp+SeVuvNvLuYXYdbCH8CK8YV4O8G94eJrv6urs7oEueEmN1IZ4h25ovbka7a4WddEO+B90hiZqQPidws+xaXrhk/XNT+73Dk9uGrSsf44aKfKLBU9MCGhrLmGfgBjojWGA8+58QAAAAASUVORK5CYII=">#5B9F83</div></section>
+<section id="contact">
+<div class="content"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAACcUlEQVR4nO3dMWtTURjG8ee9N1TBWMG1fgItOvoZhMwOKUId1C2rDirRLNWxW+sQVJLFWfoZ3BosfgJni7EOibn3uKQgzdLEPk9y4fmNd3jP4c/hhiz3AGZmcwvm8O1u+/IE+ZMENAHcAnCFud4CfgM4ShH94+H63kGrNWItRAu99a59I2r55wTcZq1xwQaYFI3eo/Z3xnBK6OlJ/lKhyKcGP35du8s42dlFDwSA6euiapEB4M71qz8fMwZTQk/fyVVF2TslNAI3KXMVApuMsZzQCXXKXAXS3jmhbYZDi9SUi/UevqD+QZrXVreTVGv5RIs4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLOLSIQ4s4tIhDizi0iEOLSL9NqvwW6KrxiRZxaJEqhR4j4mlRFhtFWWwk4BmA8bI3dV7Sd/T/SMDL/vbzt/88etPsdhDAztI2NYfKnOisln04+2wNxftl7GURlQk9Gf+Z+Zp6mdXyZexlEZUJnWX5g7PPihIzz1ZVZd7RAbxudjsoy+IjcBo+vVr2vs6LEzpwQrjPZC2AnTzL2T9+Q8ZQ1oU33yhzNSh759yVFdFjzFWIlCh7p4Q+Hq7vARgwZpMdjurlPmMwJfRBqzXCpGigWrEP8ywan+63Kf82qTf93NvdvTS9H7CJwObKXVYWOEGJr4HUH9XLfVZkM7MF/QULyHkyqWgS4wAAAABJRU5ErkJggg=="></div>
+</section>
+</div>
+<script>
+/*$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300, "linear", function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});*/
+</script>
+</body>
+
+</html>
